@@ -1,0 +1,52 @@
+"""
+This program is trying to determine the total number of grades, average of all the grades, and the 
+percent of grades that are scored higher than the average grade on the final exam.
+There are 24 total scores on the final exam. The first function will display the total number of 
+exams that were taken which is 24.
+The next function will display the average score from all the exams. 
+Lastly, the final function, which is grades above average, will output the percentage of grades that 
+scored higher than average score from all the exams. 
+"""
+
+"""
+# calculate percent of grades above average
+calculate percent above average
+    count = 0
+        if grades are greater than the average
+        return grade and multiply by 100
+
+main():
+    open 'final.txt'
+    grades = []
+    list number of numbers
+        print(Number of Grades)
+    avg = 0
+    for grade in grades:
+        avg += grade
+    avg /= len(grades)
+    print(Average Grades)
+    print(Percentages of grades above average)
+"""
+
+def calculate_percent_above_average(grades, avg):
+    count = 0
+    for grade in grades:
+        if grade > avg:
+            count += 1
+    return (count * 100) / len(grades)
+
+def main():
+    f = open('Final.txt')
+    grades = []
+    for line in f:
+        grades.append(int(line.strip()))
+    print("Number of Grades: ", len(grades))
+    avg = 0
+    for grade in grades:
+        avg += grade
+    avg /= len(grades)
+    print("Average Grade: ", avg)
+    print("Percentages of Grades Above Average: {:.2f}%".format(calculate_percent_above_average(grades, avg)))
+    f.close()
+
+main()
