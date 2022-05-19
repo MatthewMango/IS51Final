@@ -1,0 +1,10 @@
+"""
+This program is trying to determine the total number of grades, average of all the grades, and the 
+percent of grades that are scored higher than the average grade on the final exam.
+There are 24 total scores on the final exam. The first function will display the total number of 
+exams that were taken which is 24.
+The next function will display the average score from all the exams. 
+Lastly, the final function, which is grades above average, will output the percentage of grades that 
+scored higher than average score from all the exams. 
+"""
+
