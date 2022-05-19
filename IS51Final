@@ -8,3 +8,22 @@ Lastly, the final function, which is grades above average, will output the perce
 scored higher than average score from all the exams. 
 """
 
+"""
+# calculate percent of grades above average
+calculate percent above average
+    count = 0
+        if grades are greater than the average
+        return grade and multiply by 100
+
+main():
+    open 'final.txt'
+    grades = []
+    list number of numbers
+        print(Number of Grades)
+    avg = 0
+    for grade in grades:
+        avg += grade
+    avg /= len(grades)
+    print(Average Grades)
+    print(Percentages of grades above average)
+"""
